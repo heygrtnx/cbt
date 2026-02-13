@@ -1,11 +1,13 @@
-#ErrorDocument 404  https://icbt.paradisemodelschool.com.ng/404
-ErrorDocument 404  http://localhost/paradiseCBT/404
-
-RewriteEngine on 
+RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [NC,L] 
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+# PHP error logging
+php_flag log_errors on
+php_value error_log /Applications/XAMPP/xamppfiles/htdocs/cbt/admin/error.log
+php_value error_reporting 32767
