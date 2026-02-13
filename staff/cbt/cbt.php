@@ -104,7 +104,7 @@ confirm($result);
 <link rel="stylesheet" href="css/w3.css">
 
 <!--===============================================================================================-->
-<link rel="icon" type="image/png" href="../images/logo.png" />
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 <link rel="manifest" href="manifest.json">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">

@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="manifest" href="manifest.json">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">

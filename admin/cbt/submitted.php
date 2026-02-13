@@ -13,7 +13,7 @@ include("../functions/init.php");
 <link rel="stylesheet" href="css/w3.css">
 
 <!--===============================================================================================-->
-<link rel="icon" type="image/png" href="../images/logo.png" />
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 <link rel="stylesheet" href="css/w3.css">
 
 <body style="background: #E9ECEF;">

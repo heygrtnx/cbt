@@ -20,7 +20,7 @@ if(!isset($data) && !isset($e_id) && !isset($sur)) {
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="icon" type="image/png" href="../logo.png" />
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 
 <body>
 

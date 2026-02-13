@@ -24,7 +24,7 @@ $(document).ready(function () {
 		$("#ModalCenter").modal();
 
 		//validate form
-		var a = document.forms["cbter"]["sur"].value;
+		var a = document.forms["cbter"]["sur"].value.trim();
 		var b = document.forms["cbter"]["nme"].value;
 
 		if (a == null || a == "") {

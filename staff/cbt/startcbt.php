@@ -19,7 +19,7 @@ $data = $_GET['id'];
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="theme-color" content="#ffffff">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="manifest" href="manifest.json">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -60,23 +60,9 @@ $data = $_GET['id'];
                 <p style="color: red;">Register your details to get started. Make sure you recheck before clicking next!
                 </p> <br /><br />
 
-                <div class="wrap-input100 rs1 validate-input" data-validate="Please input your first name">
-
-                    <select id="sur" class="input100 form-control text-center">
-                        <option>Select Your Exam ID</option>
-                        <?php
-$sql = "SELECT * from `student`";
-$result = query($sql);
-while ($row = mysqli_fetch_row($result)) {
- 
-          ?>
-                        <option id="sur" value="<?php echo $row[1]." - ".$row[2] ?>">
-                            <?php echo strtoupper($row[1]) ?></option>
-                        <?php
-  }
-?>
-                    </select>
-
+                <div class="wrap-input100 rs1 validate-input" data-validate="Please input your full name">
+                    <input class="input100" type="text" id="sur" name="sur" placeholder="Enter Your Full Name" required>
+                    <span class="focus-input100"></span>
                 </div>
 
 
@@ -137,6 +123,17 @@ while ($row = mysqli_fetch_row($result)) {
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
     <script src="ajax.js"></script>
+    <script>
+    // Convert student name input to Sentence Case on blur
+    document.getElementById('sur').addEventListener('blur', function () {
+        var val = this.value.trim();
+        if (val.length > 0) {
+            this.value = val.replace(/\w\S*/g, function (txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+        }
+    });
+    </script>
 </body>
 
 </html>
